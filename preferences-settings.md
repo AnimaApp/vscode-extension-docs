@@ -80,7 +80,7 @@ The Preferences menu is divided into two sections:
    "!public"
   ]
   ```
-  This means that when scanning for components, we only look at components in the src paths (the first pattern) unless they start with "public". You can include a number of valid paths here.
+  This means that when scanning for components, we only search for usage patterns and components themselves in the included subdirectories. In this example, we'll search for components and component usages under the src/ subdirectories, unless they contain the word public.
 
 -- External component filtering by package names. In enrichments.json, you have the key **packages**:
    ```
