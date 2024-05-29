@@ -69,6 +69,8 @@ The Preferences menu is divided into two sections:
   - Description: This means that when scanning, we not only rely on component usages, but actually parse every component to try and identify all of its props and variants.
   - When to turn on? When your component library contains components that haven't been used yet, but you are still interested in integrating them into the Frontier results.
   - When to turn off? If you have a lot of components, this might increase the number even further. Additionally, it may find irrelevant components that you have in your local or external components that you are interested in utilizing in your Figma design implementation. Finally, Deep component detection is resource intensive and may take too long or slow down your VScode while it's running.
+  
+    ***Note: before turning on Deep component detection, make sure that the relevant libraries are marked as depdendencies in your package.json and you have run "npm install" or "yarn install" recently***
 
 ### How do you reduce the amount of components to a more "reasonable" amount?
 
